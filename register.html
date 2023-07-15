@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Store</title>
+    <link rel="icon" href="\assets\img/Layer0.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/register.css">
+</head>
+<body>
+    <div class="login">
+        <div class="background-login">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="../assets/img/Layer0.png">
+                </a>
+            </div>
+            <div class="type">  
+                <p>Đăng Kí</p>
+                <form method="POST" action="/assets/php/register.php" name="register-form" onsubmit="return validateForm()">
+                    <input type="text" name="first_name" placeholder="Họ">
+                    <span id="first-name-error" class="error-message"style="display: none;"></span>
+                    <input type="text" name="last_name" placeholder="Tên">
+                    <span id="last-name-error" class="error-message" style="display: none;"></span> 
+                    <input type="email" name="email" placeholder="example@gmail.com">
+                    <span id="email-error" class="error-message" style="display: none;"></span>
+                    <input type="text" name="username" placeholder="Tên tài khoản">
+                    <span id="username-error" class="error-message"style="display: none;"></span>
+                    <input type="password" name="password" placeholder="Mật khẩu">
+                    <span id="password-error" class="error-message" style="display: none;"></span>
+                    <input type="password" name="confirm-password" placeholder="Xác nhận mật khẩu">
+                    <span id="confirm-password-error" class="error-message"style="display: none;"></span>
+                    <input type="submit" value="Register" >
+                </form>
+                <div class="register">
+                    <span>Bạn đã có tài khoản ?</span>
+                    <a href="/assets/php/login.php">
+                        Đăng nhập
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script type="text/javascript" src="/assets/js/register.js"></script>
+</body>
+</html>
